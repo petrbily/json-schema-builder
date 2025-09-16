@@ -1,0 +1,22 @@
+{
+  "name": "John",
+  "surname": "Novak",
+  "age": 30,
+  "address": {
+    "street": "Main 123",
+    "city": "Prague",
+    "postalCode": "11000"
+  },
+  "hobbies": [
+    {
+      "name": "reading",
+      "frequency": "weekly",
+      "mostEnjoyed": true
+    },
+    {
+      "name": "running",
+      "frequency": "daily",
+      "mostEnjoyed": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "properties": {
+    "name": {
+      "description": "The name of the person.",
+      "type": "string"
+    },
+    "surname": {
+      "description": "The surname of the person.",
+      "type": "string"
+    },
+    "age": {
+      "description": "The age of the person.",
+      "type": "integer"
+    },
+    "address": {
+      "description": "The address of the person .",
+      "type": "object",
+      "properties": {
+        "street": {
+          "description": "The street of the address.",
+          "type": "string"
+        },
+        "city": {
+          "description": "The city of the address.",
+          "type": "string"
+        },
+        "postalCode": {
+          "description": "The postal code of the address.",
+          "type": "string"
+        }
+      }
+    },
+    "hobbies": {
+      "description": "The hobbies of the person.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "The name of the hobby.",
+            "type": "string"
+          },
+          "frequency": {
+            "description": "How often the person engages in this hobby.",
+            "type": "string",
+            "enum": ["daily", "weekly", "monthly", "yearly"]
+          },
+          "mostEnjoyed": {
+            "description": "Whether this is the person's most enjoyed hobby.",
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
